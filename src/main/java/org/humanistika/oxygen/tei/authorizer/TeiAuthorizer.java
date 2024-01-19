@@ -95,17 +95,18 @@ public class TeiAuthorizer extends TeiCompleter {
         return list;
     }
 
-    @Override
-    protected Configuration getConfiguration() {
-        if(configuration == null) {
-            synchronized(this) {
-                if(configuration == null) {
-                    this.configuration = ConfigurationFactory.getInstance().loadConfiguration();
-                }
-            }
-        }
-        return configuration;
-    }
+    //why do we need to override this function? the implementation is the same
+//    @Override
+//    protected Configuration getConfiguration() {
+//        if(configuration == null) {
+//            synchronized(this) {
+//                if(configuration == null) {
+//                    this.configuration = ConfigurationFactory.getInstance().loadConfiguration();
+//                }
+//            }
+//        }
+//        return configuration;
+//    }
 
     @Override
     protected ClientFactory getClientFactory() {

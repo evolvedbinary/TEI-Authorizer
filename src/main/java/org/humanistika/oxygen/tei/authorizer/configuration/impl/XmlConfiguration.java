@@ -98,7 +98,8 @@ public class XmlConfiguration extends org.humanistika.oxygen.tei.completer.confi
             } else {
                 dependent = new Dependent(
                         autoComplete.getDependent().getDefault(),
-                        autoComplete.getDependent().getValue()
+                        autoComplete.getDependent().getValue(),
+                        ""
                 );
             }
 
